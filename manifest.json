@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Meeting Reminder",
+  "version": "0.3",
+  "description": "An extension that allows you to add a page as an event in Google Calendar reminder",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+
+  "permissions": [
+    "tabs" ],
+  
+  "background": {
+    "scripts": ["eventPage.js", "FileSaver.js"],
+    "persistent": false
+  },
+
+  "optional_permissions": [ "tabs"],
+
+  "options_page": "options.html",
+
+  "browser_action": {
+    "default_icon": "icon.png" 
+  }
+
+}
+
+
+
+
